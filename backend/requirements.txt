@@ -1,4 +1,4 @@
 uvicorn==0.22.0
 fastapi==0.99.0
-decouple==0.0.7
+python-decouple==3.8.0
 openai==0.27.8
