@@ -30,7 +30,7 @@ function Controller() {
 
         // Send form data to API endpoint
         await axios
-          .post("http://localhost:8000/post-audio", formData, {
+          .post("https://junieter-the-ai.onrender.com/post-audio", formData, {
             headers: { "Content-Type": "audio/mpeg" },
             responseType: "arraybuffer",
           })

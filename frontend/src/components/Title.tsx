@@ -13,7 +13,7 @@ function Title({ setMessages }: Props) {
     setIsResetting(true);
 
     await axios
-      .get("http://localhost:8000/reset")
+      .get("https://junieter-the-ai.onrender.com/reset")
       .then((res) => {
         if (res.status == 200) {
           setMessages([]);
