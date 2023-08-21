@@ -16,21 +16,21 @@ from functions.openai_requests import convert_audio_to_text, get_chat_response
 
 app = FastAPI()
 
-# # Cors - Origins
-# origins = [
-#     "http://localhost:5173",
-#     "http://localhost:5174",
-#     "http://localhost:4173",
-#     "http://localhost:3000",
-#     "https://june-ai-chat.netlify.app",
-#     "*",
-# ]
+# Cors - Origins
+origins = [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:4173",
+    "http://localhost:3000",
+    "https://june-ai-chat.netlify.app",
+    "*",
+]
 
 # CORS - Middleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= ["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
