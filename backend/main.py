@@ -22,7 +22,7 @@ origins = [
     "http://localhost:5174",
     "http://localhost:4173",
     "http://localhost:3000",
-    "https://june-ai-chat.netlify.app/",
+    "https://june-ai-chat.netlify.app",
 ]
 
 # CORS - Middleware
